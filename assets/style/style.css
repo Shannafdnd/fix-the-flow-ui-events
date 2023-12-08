@@ -79,3 +79,171 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+a:nth-of-type(2) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.rainbow-bg{
+  animation: rainbow-bg 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow-bg{
+ 10% {background-color: red;}
+ 20% {background-color: orange;}
+ 30% {background-color: yellow;}
+ 40% {background-color: yellowgreen;}
+ 50% {background-color: green;}
+ 60% {background-color: aquamarine;}
+ 70% {background-color: aqua;}
+ 80% {background-color: #9d7beb;}
+ 90% {background-color: plum;}
+ 100% {background-color: pink;}
+}
+
+a:nth-of-type(4) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(20);
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 16rem}
+}
+
+a:nth-of-type(8) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a.flowing {
+  animation: flowing 2s ease-in-out 1s;
+}
+
+@keyframes flowing {
+  from {background-image: linear-gradient( to right, white,var(--highlight-secondary));}
+  to {background-image: linear-gradient(to right, var(--highlight-secondary),white);}
+}
+
+a:nth-of-type(6) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a.yellow {
+  background-color: yellow;
+  border: 2px solid #7ce7c9;
+}
+
+a:nth-of-type(3) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a.rotate {
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(360deg);}
+}
+
+a:nth-of-type(11) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a.scale {
+  transition: transform 2s;
+  transform: scale(2);
+}
+
+a:nth-of-type(18) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a.scale2 {
+  transition: transform 2s;
+  transform: scale(0.5);
+}
+
+a:nth-of-type(20) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(20) span {
+display: none;
+}
+
+a.code {
+  font-family: monospace;
+}
+
+a.code span {
+  display: inline;
+}
+
+a:nth-of-type(16) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+a:nth-of-type(16) span:nth-of-type(2){
+  display: none;
+}
+
+a.arrow span:nth-of-type(1){
+display: none;
+}
+
+a.arrow span:nth-of-type(2){
+  display: inline;
+  }
+
+  a:nth-of-type(16) {
+    position: relative;
+    background: var(--highlight-secondary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+  
+  a:nth-of-type(16) span:nth-of-type(2){
+    display: none;
+  }
+  
+  a.arrow span:nth-of-type(1){
+  display: none;
+  }
+  
+  a.arrow span:nth-of-type(2){
+    display: inline;
+    }
