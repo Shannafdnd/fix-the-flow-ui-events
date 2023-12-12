@@ -9,7 +9,7 @@ function jumpHandler() {
 
 let design = document.querySelector('a:nth-of-type(2)')
 
-design.addEventListener('click', RainbowAnimation)
+design.addEventListener('dblclick', RainbowAnimation)
 design.addEventListener('animationed', RainbowAnimation)
 
 function RainbowAnimation() {
@@ -44,7 +44,7 @@ function yellow() {
 
 let and = document.querySelector('a:nth-of-type(3)')
 
-and.addEventListener('click', rotateAnimation)
+document.addEventListener('keyup', rotateAnimation)
 and.addEventListener('animationed', rotateAnimation)
 
 function rotateAnimation() {
@@ -53,10 +53,14 @@ function rotateAnimation() {
 
 let events = document.querySelector('a:nth-of-type(11)')
 
-events.addEventListener('click',scale)
+events.addEventListener('mousedown',longpress)
 
 function scale() {
   events.classList.toggle('scale')
+}
+
+function longpress() {
+  setTimeout(()=>{events.addEventListener("mouseup", scale, {"once":true})}, 200)
 }
 
 let states = document.querySelector('a:nth-of-type(18)')
